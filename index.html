@@ -1,0 +1,2278 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Assessoria Jurídica para MEI e Pequenas Empresas | Sonia Valerio Advocacia</title>
+
+  <meta
+    name="description"
+    content="Assessoria jurídica especializada para MEI e pequenas empresas. Orientação jurídica em questões bancárias, financeiras, contratos, cobranças, Simples Nacional, PGMEI, DAS-MEI e regularização empresarial."
+  >
+
+  <meta
+    name="keywords"
+    content="advocacia para MEI, advogado MEI, assessoria jurídica MEI, pequenas empresas, Simples Nacional, PGMEI, DAS MEI, DASN SIMEI, direito empresarial, direito bancário"
+  >
+
+  <meta name="author" content="Sociedade Individual de Advocacia Sonia Valerio">
+
+  <meta property="og:title" content="Assessoria Jurídica Especializada para MEI e Pequenas Empresas">
+  <meta
+    property="og:description"
+    content="Orientação jurídica especializada para empreendedores, MEIs e pequenas empresas."
+  >
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --primary: #0b2f4f;
+      --primary-dark: #071f35;
+      --secondary: #c9a45c;
+      --secondary-light: #e5c982;
+      --white: #ffffff;
+      --bg: #f6f8fb;
+      --text: #1c2733;
+      --muted: #687684;
+      --border: #dfe5eb;
+      --success: #198754;
+      --danger: #b42318;
+      --shadow: 0 18px 45px rgba(7, 31, 53, .10);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1140px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--primary);
+      color: var(--secondary-light);
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      font-size: 20px;
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 500;
+      margin-top: -3px;
+    }
+
+    nav {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+
+    nav a {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    nav a:hover {
+      color: #8a6b2d;
+    }
+
+    .nav-button {
+      background: var(--primary);
+      color: white !important;
+      padding: 11px 18px;
+      border-radius: 10px;
+    }
+
+    /* HERO */
+
+    .hero {
+      background:
+        radial-gradient(circle at 80% 20%, rgba(201,164,92,.18), transparent 35%),
+        linear-gradient(135deg, #071f35 0%, #0b2f4f 55%, #123f62 100%);
+      color: white;
+      padding: 90px 0 80px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      border: 1px solid rgba(229,201,130,.45);
+      color: var(--secondary-light);
+      border-radius: 50px;
+      padding: 7px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 5vw, 64px);
+      line-height: 1.05;
+      margin-bottom: 22px;
+      letter-spacing: -1.8px;
+    }
+
+    .hero h1 span {
+      color: var(--secondary-light);
+    }
+
+    .hero p {
+      color: rgba(255,255,255,.82);
+      font-size: 18px;
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border: 0;
+      cursor: pointer;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 22px;
+      border-radius: 11px;
+      font-weight: 800;
+      transition: .2s;
+    }
+
+    .btn-primary {
+      background: var(--secondary);
+      color: #152332;
+    }
+
+    .btn-primary:hover {
+      background: var(--secondary-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      color: white;
+      border: 1px solid rgba(255,255,255,.3);
+      background: rgba(255,255,255,.06);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,.12);
+    }
+
+    .hero-card {
+      background: white;
+      color: var(--text);
+      padding: 30px;
+      border-radius: 22px;
+      box-shadow: 0 25px 70px rgba(0,0,0,.25);
+    }
+
+    .hero-card h3 {
+      color: var(--primary);
+      font-size: 23px;
+      margin-bottom: 8px;
+    }
+
+    .hero-card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    .mini-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .mini-item {
+      display: flex;
+      gap: 11px;
+      align-items: flex-start;
+      font-size: 14px;
+    }
+
+    .check {
+      width: 23px;
+      height: 23px;
+      flex: 0 0 23px;
+      border-radius: 50%;
+      background: #eaf5ee;
+      color: var(--success);
+      display: grid;
+      place-items: center;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    /* GENERAL */
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-header {
+      max-width: 720px;
+      margin-bottom: 45px;
+    }
+
+    .section-label {
+      color: #967333;
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: clamp(30px, 4vw, 44px);
+      color: var(--primary);
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    .section-header p {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    /* CARDS */
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 8px 30px rgba(10,40,65,.04);
+    }
+
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: #edf3f8;
+      color: var(--primary);
+      font-size: 21px;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 9px;
+      font-size: 20px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* MEI */
+
+    .mei-section {
+      background: white;
+    }
+
+    .mei-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: stretch;
+    }
+
+    .mei-content {
+      background: var(--primary);
+      color: white;
+      padding: 40px;
+      border-radius: 22px;
+    }
+
+    .mei-content h2 {
+      color: white;
+    }
+
+    .mei-content p {
+      color: rgba(255,255,255,.78);
+    }
+
+    .mei-list {
+      margin-top: 25px;
+      display: grid;
+      gap: 15px;
+    }
+
+    .mei-list li {
+      list-style: none;
+      position: relative;
+      padding-left: 28px;
+      color: rgba(255,255,255,.88);
+    }
+
+    .mei-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--secondary-light);
+      font-weight: 900;
+    }
+
+    .info-box {
+      background: #f7f9fb;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 40px;
+    }
+
+    .info-box h3 {
+      color: var(--primary);
+      margin-bottom: 18px;
+    }
+
+    .info-box p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+    .official-note {
+      background: #fff8e8;
+      border-left: 4px solid var(--secondary);
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 13px;
+      color: #5f4a22;
+      margin-top: 20px;
+    }
+
+    /* PROCESS */
+
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .step {
+      position: relative;
+      padding: 28px;
+      background: white;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+    }
+
+    .number {
+      width: 38px;
+      height: 38px;
+      background: var(--primary);
+      color: var(--secondary-light);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .step h3 {
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* FORM */
+
+    .form-section {
+      background:
+        linear-gradient(180deg, #f6f8fb 0%, #edf2f6 100%);
+    }
+
+    .form-wrapper {
+      background: white;
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: .75fr 1.25fr;
+    }
+
+    .form-info {
+      background: var(--primary);
+      color: white;
+      padding: 45px;
+    }
+
+    .form-info h2 {
+      color: white;
+    }
+
+    .form-info p {
+      color: rgba(255,255,255,.78);
+      margin-bottom: 25px;
+    }
+
+    .form-contact {
+      display: grid;
+      gap: 17px;
+      margin-top: 30px;
+    }
+
+    .contact-line {
+      font-size: 14px;
+      color: rgba(255,255,255,.88);
+    }
+
+    .form-area {
+      padding: 45px;
+    }
+
+    form {
+      display: grid;
+      gap: 17px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      background: #fbfcfd;
+      border-radius: 10px;
+      padding: 13px 14px;
+      outline: none;
+      color: var(--text);
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--secondary);
+      box-shadow: 0 0 0 3px rgba(201,164,92,.13);
+    }
+
+    textarea {
+      min-height: 125px;
+      resize: vertical;
+    }
+
+    .privacy-check {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .privacy-check input {
+      width: auto;
+      margin-top: 3px;
+    }
+
+    .privacy-check label {
+      font-weight: 500;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .form-message {
+      display: none;
+      padding: 14px;
+      background: #eaf7ef;
+      color: #146c43;
+      border-radius: 9px;
+      font-size: 14px;
+    }
+
+    /* COMPANY */
+
+    .company {
+      background: white;
+    }
+
+    .company-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .company-box {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 30px;
+    }
+
+    .company-box h3 {
+      color: var(--primary);
+      margin-bottom: 18px;
+    }
+
+    .company-data {
+      display: grid;
+      gap: 12px;
+    }
+
+    .company-data div {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 10px;
+      font-size: 14px;
+      border-bottom: 1px solid #edf0f3;
+      padding-bottom: 10px;
+    }
+
+    .company-data strong {
+      color: var(--primary);
+    }
+
+    .company-data span {
+      color: var(--muted);
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #061a2c;
+      color: white;
+      padding: 45px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 35px;
+    }
+
+    footer h3 {
+      margin-bottom: 14px;
+      color: var(--secondary-light);
+    }
+
+    footer p,
+    footer li {
+      color: rgba(255,255,255,.65);
+      font-size: 13px;
+    }
+
+    footer ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 20px;
+      text-align: center;
+      color: rgba(255,255,255,.5);
+      font-size: 12px;
+    }
+
+    /* MODAL */
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.65);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 3000;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal-content {
+      width: min(800px, 100%);
+      max-height: 88vh;
+      overflow-y: auto;
+      background: white;
+      border-radius: 20px;
+      padding: 35px;
+      position: relative;
+    }
+
+    .modal-content h2 {
+      margin-right: 40px;
+    }
+
+    .modal-content h3 {
+      color: var(--primary);
+      margin: 22px 0 8px;
+    }
+
+    .modal-content p,
+    .modal-content li {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .modal-content ul {
+      padding-left: 20px;
+    }
+
+    .close {
+      position: absolute;
+      right: 18px;
+      top: 15px;
+      border: 0;
+      background: transparent;
+      font-size: 28px;
+      color: var(--muted);
+      cursor: pointer;
+    }
+
+    /* COOKIE */
+
+    .cookie-banner {
+      position: fixed;
+      bottom: 18px;
+      left: 18px;
+      right: 18px;
+      z-index: 2500;
+      background: #fff;
+      border: 1px solid var(--border);
+      box-shadow: 0 15px 50px rgba(0,0,0,.18);
+      border-radius: 15px;
+      padding: 20px;
+      display: none;
+    }
+
+    .cookie-content {
+      width: min(1100px, 100%);
+      margin: auto;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .cookie-content p {
+      color: var(--muted);
+      font-size: 13px;
+      flex: 1;
+    }
+
+    .cookie-buttons {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .cookie-buttons button {
+      border: 0;
+      border-radius: 9px;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .accept-cookie {
+      background: var(--primary);
+      color: white;
+    }
+
+    .reject-cookie {
+      background: #edf0f3;
+      color: var(--primary);
+    }
+
+    /* FLOATING WHATSAPP */
+
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 25px;
+      width: 57px;
+      height: 57px;
+      border-radius: 50%;
+      background: #25d366;
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 25px;
+      box-shadow: 0 8px 25px rgba(37,211,102,.35);
+      z-index: 1500;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+      nav {
+        display: none;
+      }
+
+      .hero-grid,
+      .form-wrapper,
+      .mei-grid,
+      .company-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .process {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 60px 0;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+
+      .cards,
+      .process,
+      .form-row,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-info,
+      .form-area,
+      .mei-content,
+      .info-box {
+        padding: 28px;
+      }
+
+      .company-data div {
+        grid-template-columns: 1fr;
+        gap: 3px;
+      }
+
+      .cookie-content {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .whatsapp {
+        bottom: 90px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+
+      <a href="#inicio" class="brand">
+        <span class="brand-mark">SV</span>
+
+        <span>
+          Sonia Valerio Advocacia
+          <small>Assessoria Jurídica Empresarial</small>
+        </span>
+      </a>
+
+      <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#mei">MEI & Simples</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#empresa">Empresa</a>
+        <a href="#solicitar" class="nav-button">Solicitar análise</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+
+        <div>
+
+          <span class="eyebrow">
+            Assessoria Jurídica Especializada
+          </span>
+
+          <h1>
+            Segurança jurídica para
+            <span>MEI e pequenas empresas.</span>
+          </h1>
+
+          <p>
+            Orientação jurídica personalizada para empreendedores que precisam
+            entender, organizar e proteger seus negócios diante de questões
+            financeiras, bancárias, contratuais, empresariais e tributárias.
+          </p>
+
+          <div class="hero-actions">
+
+            <a href="#solicitar" class="btn btn-primary">
+              Solicitar análise jurídica
+            </a>
+
+            <a href="#servicos" class="btn btn-outline">
+              Conhecer os serviços
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+          <h3>
+            Seu negócio precisa de orientação?
+          </h3>
+
+          <p>
+            Envie seus dados para uma análise inicial da situação apresentada.
+          </p>
+
+          <div class="mini-list">
+
+            <div class="mini-item">
+              <span class="check">✓</span>
+              <span>Questões bancárias e financeiras</span>
+            </div>
+
+            <div class="mini-item">
+              <span class="check">✓</span>
+              <span>Contratos e cobranças</span>
+            </div>
+
+            <div class="mini-item">
+              <span class="check">✓</span>
+              <span>Regularização empresarial</span>
+            </div>
+
+            <div class="mini-item">
+              <span class="check">✓</span>
+              <span>MEI, Simples Nacional e obrigações</span>
+            </div>
+
+            <div class="mini-item">
+              <span class="check">✓</span>
+              <span>Análise jurídica personalizada</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SERVIÇOS -->
+    <section id="servicos">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div class="section-label">
+            Áreas de atuação
+          </div>
+
+          <h2>
+            Assessoria jurídica para os desafios do seu negócio
+          </h2>
+
+          <p>
+            Atendimento direcionado a MEIs, profissionais autônomos,
+            microempresas e pequenas empresas que precisam tomar decisões
+            empresariais com maior segurança jurídica.
+          </p>
+
+        </div>
+
+
+        <div class="cards">
+
+          <article class="card">
+
+            <div class="card-icon">⚖</div>
+
+            <h3>
+              Direito Empresarial
+            </h3>
+
+            <p>
+              Orientação sobre contratos, documentos empresariais,
+              responsabilidades, relações comerciais e questões jurídicas
+              relacionadas à atividade empresarial.
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="card-icon">▣</div>
+
+            <h3>
+              Questões Bancárias
+            </h3>
+
+            <p>
+              Análise jurídica de contratos bancários, cobranças,
+              tarifas, empréstimos, financiamentos, relações com instituições
+              financeiras e possíveis conflitos contratuais.
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="card-icon">R$</div>
+
+            <h3>
+              Questões Financeiras
+            </h3>
+
+            <p>
+              Orientação jurídica para situações envolvendo dívidas,
+              negociações, cobranças, contratos de crédito e obrigações
+              financeiras empresariais.
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="card-icon">MEI</div>
+
+            <h3>
+              Assessoria para MEI
+            </h3>
+
+            <p>
+              Orientação jurídica para Microempreendedores Individuais
+              em questões relacionadas à atividade empresarial e às suas
+              obrigações.
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="card-icon">SN</div>
+
+            <h3>
+              Simples Nacional
+            </h3>
+
+            <p>
+              Orientação jurídica em situações envolvendo empresas optantes
+              pelo Simples Nacional, notificações, obrigações e questões
+              relacionadas à regularidade empresarial.
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="card-icon">✓</div>
+
+            <h3>
+              Cobranças e Contratos
+            </h3>
+
+            <p>
+              Análise de contratos, inadimplemento, cobranças e estratégias
+              jurídicas adequadas à situação apresentada pelo empreendedor.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MEI -->
+    <section class="mei-section" id="mei">
+
+      <div class="container mei-grid">
+
+        <div class="mei-content">
+
+          <div class="section-label">
+            MEI e pequenos negócios
+          </div>
+
+          <h2>
+            Seu CNPJ também precisa de proteção jurídica.
+          </h2>
+
+          <p>
+            A rotina do MEI envolve obrigações empresariais, tributárias,
+            contratuais e financeiras. A orientação adequada ajuda o
+            empreendedor a compreender seus direitos, deveres e riscos.
+          </p>
+
+          <ul class="mei-list">
+
+            <li>
+              Orientação sobre obrigações do MEI
+            </li>
+
+            <li>
+              Análise de situações envolvendo DAS-MEI
+            </li>
+
+            <li>
+              Questões relacionadas ao Simples Nacional
+            </li>
+
+            <li>
+              Orientação sobre PGMEI e obrigações do SIMEI
+            </li>
+
+            <li>
+              Análise de contratos e cobranças
+            </li>
+
+            <li>
+              Questões bancárias e financeiras
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="info-box">
+
+          <h3>
+            PGMEI, DAS-MEI e DASN-SIMEI
+          </h3>
+
+          <p>
+            O MEI optante pelo SIMEI possui obrigações específicas. O
+            <strong>PGMEI</strong> é o sistema utilizado para realizar a
+            apuração e gerar o Documento de Arrecadação do Simples Nacional
+            do MEI (DAS-MEI).
+          </p>
+
+          <p>
+            A <strong>DASN-SIMEI</strong> corresponde à declaração anual do
+            Microempreendedor Individual e deve ser observada dentro dos
+            prazos aplicáveis.
+          </p>
+
+          <p>
+            Nossa atuação é jurídica: analisamos a situação apresentada,
+            documentos, notificações e possíveis conflitos, orientando o
+            empreendedor sobre as medidas jurídicas cabíveis.
+          </p>
+
+          <div class="official-note">
+            <strong>Atenção:</strong>
+            informações, cálculos, emissão de guias e declarações devem ser
+            conferidos nos canais oficiais do Simples Nacional e da Receita
+            Federal. Este site não substitui os sistemas oficiais do Governo.
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- COMO FUNCIONA -->
+    <section id="como-funciona">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div class="section-label">
+            Atendimento
+          </div>
+
+          <h2>
+            Como funciona a solicitação
+          </h2>
+
+          <p>
+            Um processo simples para você apresentar sua situação e receber
+            orientação sobre os próximos passos jurídicos.
+          </p>
+
+        </div>
+
+
+        <div class="process">
+
+          <div class="step">
+
+            <div class="number">1</div>
+
+            <h3>
+              Envie sua solicitação
+            </h3>
+
+            <p>
+              Preencha o formulário com seus dados e explique brevemente
+              o problema enfrentado.
+            </p>
+
+          </div>
+
+
+          <div class="step">
+
+            <div class="number">2</div>
+
+            <h3>
+              Análise inicial
+            </h3>
+
+            <p>
+              A equipe poderá avaliar as informações fornecidas para
+              compreender a natureza da demanda.
+            </p>
+
+          </div>
+
+
+          <div class="step">
+
+            <div class="number">3</div>
+
+            <h3>
+              Orientação
+            </h3>
+
+            <p>
+              Caso haja interesse e disponibilidade para atendimento,
+              serão apresentados os próximos passos.
+            </p>
+
+          </div>
+
+
+          <div class="step">
+
+            <div class="number">4</div>
+
+            <h3>
+              Atendimento jurídico
+            </h3>
+
+            <p>
+              A contratação de serviços jurídicos dependerá da análise
+              do caso e das condições acordadas entre as partes.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FORMULÁRIO -->
+    <section class="form-section" id="solicitar">
+
+      <div class="container">
+
+        <div class="form-wrapper">
+
+          <div class="form-info">
+
+            <div class="section-label">
+              Solicitação
+            </div>
+
+            <h2>
+              Conte o que está acontecendo.
+            </h2>
+
+            <p>
+              Envie uma solicitação de análise. Quanto mais objetiva for
+              a descrição, melhor será a compreensão inicial da situação.
+            </p>
+
+            <div class="form-contact">
+
+              <div class="contact-line">
+                <strong>Sociedade Individual de Advocacia Sonia Valerio</strong>
+              </div>
+
+              <div class="contact-line">
+                CNPJ: 55.884.320/0001-43
+              </div>
+
+              <div class="contact-line">
+                OAB/SP: 437.467
+              </div>
+
+              <div class="contact-line">
+                São Paulo – SP
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="form-area">
+
+            <form id="leadForm">
+
+              <div class="form-row">
+
+                <div>
+                  <label for="nome">
+                    Nome completo *
+                  </label>
+
+                  <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Seu nome"
+                    required
+                  >
+                </div>
+
+
+                <div>
+                  <label for="telefone">
+                    WhatsApp / Telefone *
+                  </label>
+
+                  <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="(00) 00000-0000"
+                    required
+                  >
+                </div>
+
+              </div>
+
+
+              <div class="form-row">
+
+                <div>
+                  <label for="email">
+                    E-mail *
+                  </label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="seu@email.com"
+                    required
+                  >
+                </div>
+
+
+                <div>
+                  <label for="cnpj">
+                    CNPJ da empresa
+                  </label>
+
+                  <input
+                    type="text"
+                    id="cnpj"
+                    name="cnpj"
+                    placeholder="00.000.000/0000-00"
+                  >
+                </div>
+
+              </div>
+
+
+              <div>
+
+                <label for="tipo">
+                  Tipo de solicitação *
+                </label>
+
+                <select id="tipo" name="tipo" required>
+
+                  <option value="">
+                    Selecione uma opção
+                  </option>
+
+                  <option>
+                    Assessoria para MEI
+                  </option>
+
+                  <option>
+                    Simples Nacional / PGMEI / DAS-MEI
+                  </option>
+
+                  <option>
+                    Questão bancária
+                  </option>
+
+                  <option>
+                    Empréstimo ou financiamento
+                  </option>
+
+                  <option>
+                    Dívida ou cobrança
+                  </option>
+
+                  <option>
+                    Contrato empresarial
+                  </option>
+
+                  <option>
+                    Regularização empresarial
+                  </option>
+
+                  <option>
+                    Outra questão jurídica
+                  </option>
+
+                </select>
+
+              </div>
+
+
+              <div>
+
+                <label for="descricao">
+                  Descreva sua situação *
+                </label>
+
+                <textarea
+                  id="descricao"
+                  name="descricao"
+                  placeholder="Explique brevemente o que aconteceu, qual é a sua dúvida ou qual problema sua empresa está enfrentando."
+                  required
+                ></textarea>
+
+              </div>
+
+
+              <div class="privacy-check">
+
+                <input
+                  type="checkbox"
+                  id="consentimento"
+                  name="consentimento"
+                  required
+                >
+
+                <label for="consentimento">
+                  Declaro que li a
+                  <a href="#" onclick="openModal('privacy'); return false;">
+                    Política de Privacidade
+                  </a>
+                  e autorizo o tratamento dos dados fornecidos para
+                  atendimento da minha solicitação.
+                </label>
+
+              </div>
+
+
+              <button
+                type="submit"
+                class="btn btn-primary"
+              >
+                Enviar solicitação
+              </button>
+
+              <div id="formMessage" class="form-message">
+                Solicitação registrada neste exemplo de formulário.
+                Para produção, conecte este formulário ao seu servidor,
+                CRM ou serviço de recebimento de leads.
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- EMPRESA -->
+    <section class="company" id="empresa">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div class="section-label">
+            Identificação empresarial
+          </div>
+
+          <h2>
+            Informações da Sociedade de Advocacia
+          </h2>
+
+          <p>
+            Informações cadastrais e institucionais para identificação
+            da responsável pelo atendimento jurídico.
+          </p>
+
+        </div>
+
+
+        <div class="company-grid">
+
+          <div class="company-box">
+
+            <h3>
+              Dados cadastrais
+            </h3>
+
+            <div class="company-data">
+
+              <div>
+                <strong>Razão Social</strong>
+                <span>
+                  Sociedade Individual de Advocacia Sonia Valerio
+                </span>
+              </div>
+
+              <div>
+                <strong>CNPJ</strong>
+                <span>
+                  55.884.320/0001-43
+                </span>
+              </div>
+
+              <div>
+                <strong>Natureza jurídica</strong>
+                <span>
+                  Sociedade Unipessoal de Advocacia
+                </span>
+              </div>
+
+              <div>
+                <strong>CNAE principal</strong>
+                <span>
+                  69.11-7-01 — Serviços advocatícios
+                </span>
+              </div>
+
+              <div>
+                <strong>Situação</strong>
+                <span>
+                  Ativa
+                </span>
+              </div>
+
+              <div>
+                <strong>OAB</strong>
+                <span>
+                  OAB/SP 437.467
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="company-box">
+
+            <h3>
+              Endereço cadastral
+            </h3>
+
+            <div class="company-data">
+
+              <div>
+                <strong>Logradouro</strong>
+                <span>
+                  Avenida Interlagos, 4455
+                </span>
+              </div>
+
+              <div>
+                <strong>Complemento</strong>
+                <span>
+                  Conj. 2 Sala 271
+                </span>
+              </div>
+
+              <div>
+                <strong>Bairro</strong>
+                <span>
+                  Jardim Umuarama
+                </span>
+              </div>
+
+              <div>
+                <strong>Cidade</strong>
+                <span>
+                  São Paulo – SP
+                </span>
+              </div>
+
+              <div>
+                <strong>CEP</strong>
+                <span>
+                  04661-300
+                </span>
+              </div>
+
+              <div>
+                <strong>País</strong>
+                <span>
+                  Brasil
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <h3>
+            Sonia Valerio Advocacia
+          </h3>
+
+          <p>
+            Assessoria jurídica especializada para empreendedores,
+            MEIs e pequenas empresas.
+          </p>
+
+          <br>
+
+          <p>
+            CNPJ: 55.884.320/0001-43
+          </p>
+
+          <p>
+            OAB/SP 437.467
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Atendimento
+          </h3>
+
+          <ul>
+
+            <li>
+              Assessoria para MEI
+            </li>
+
+            <li>
+              Direito empresarial
+            </li>
+
+            <li>
+              Direito bancário
+            </li>
+
+            <li>
+              Contratos
+            </li>
+
+            <li>
+              Questões financeiras
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Privacidade
+          </h3>
+
+          <ul>
+
+            <li>
+              <a
+                href="#"
+                onclick="openModal('privacy'); return false;"
+              >
+                Política de Privacidade
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                onclick="openModal('cookies'); return false;"
+              >
+                Política de Cookies
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                onclick="openModal('terms'); return false;"
+              >
+                Termos de Uso
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        © <span id="year"></span>
+        Sociedade Individual de Advocacia Sonia Valerio.
+        Todos os direitos reservados.
+
+        <br><br>
+
+        Este site possui caráter informativo e não constitui promessa
+        de resultado, concessão de crédito ou oferta de produto financeiro.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- WHATSAPP -->
+  <!-- Substitua o número abaixo pelo WhatsApp oficial antes da publicação -->
+  <a
+    class="whatsapp"
+    href="#solicitar"
+    aria-label="Solicitar atendimento"
+    title="Solicitar atendimento"
+  >
+    ☎
+  </a>
+
+
+  <!-- MODAL POLÍTICA DE PRIVACIDADE -->
+  <div class="modal" id="privacy">
+
+    <div class="modal-content">
+
+      <button
+        class="close"
+        onclick="closeModal('privacy')"
+        aria-label="Fechar"
+      >
+        ×
+      </button>
+
+      <h2>
+        Política de Privacidade
+      </h2>
+
+      <p>
+        Última atualização: 10 de agosto de 2026.
+      </p>
+
+      <h3>
+        1. Controlador
+      </h3>
+
+      <p>
+        A presente Política de Privacidade aplica-se ao site e aos canais
+        digitais utilizados pela Sociedade Individual de Advocacia Sonia
+        Valerio, CNPJ 55.884.320/0001-43.
+      </p>
+
+      <h3>
+        2. Dados coletados
+      </h3>
+
+      <p>
+        Poderão ser coletados dados fornecidos voluntariamente pelo usuário,
+        incluindo nome, telefone, e-mail, CNPJ da empresa e informações
+        inseridas no campo de descrição da solicitação.
+      </p>
+
+      <h3>
+        3. Finalidade
+      </h3>
+
+      <p>
+        Os dados poderão ser utilizados para responder solicitações,
+        realizar contato, avaliar a possibilidade de atendimento jurídico,
+        prestar informações relacionadas aos serviços solicitados e cumprir
+        obrigações legais ou regulatórias.
+      </p>
+
+      <h3>
+        4. Dados pessoais sensíveis
+      </h3>
+
+      <p>
+        O usuário não deve inserir no formulário informações pessoais
+        sensíveis ou documentos que não sejam necessários para a solicitação
+        inicial. Caso documentos sejam necessários, será indicado canal
+        apropriado para seu envio.
+      </p>
+
+      <h3>
+        5. Compartilhamento
+      </h3>
+
+      <p>
+        Os dados poderão ser compartilhados somente quando necessário para
+        execução dos serviços, cumprimento de obrigação legal, exercício
+        regular de direitos ou utilização de fornecedores tecnológicos
+        contratados, observadas as medidas de segurança aplicáveis.
+      </p>
+
+      <h3>
+        6. Segurança
+      </h3>
+
+      <p>
+        São adotadas medidas técnicas e administrativas razoáveis para
+        proteção dos dados contra acessos não autorizados, perda, alteração,
+        divulgação ou destruição indevida.
+      </p>
+
+      <h3>
+        7. Direitos do titular
+      </h3>
+
+      <p>
+        O titular poderá exercer os direitos previstos na legislação
+        aplicável de proteção de dados, observadas as hipóteses legais
+        de conservação e tratamento das informações.
+      </p>
+
+      <h3>
+        8. Retenção
+      </h3>
+
+      <p>
+        Os dados poderão ser mantidos pelo período necessário para cumprir
+        as finalidades informadas, obrigações legais, regulatórias,
+        contratuais e para o exercício regular de direitos.
+      </p>
+
+      <h3>
+        9. Atualizações
+      </h3>
+
+      <p>
+        Esta política poderá ser atualizada periodicamente para refletir
+        alterações legais, tecnológicas ou operacionais.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- MODAL COOKIES -->
+  <div class="modal" id="cookies">
+
+    <div class="modal-content">
+
+      <button
+        class="close"
+        onclick="closeModal('cookies')"
+        aria-label="Fechar"
+      >
+        ×
+      </button>
+
+      <h2>
+        Política de Cookies
+      </h2>
+
+      <p>
+        Última atualização: 10 de agosto de 2026.
+      </p>
+
+      <h3>
+        1. O que são cookies?
+      </h3>
+
+      <p>
+        Cookies são pequenos arquivos armazenados no dispositivo do usuário
+        para permitir o funcionamento de determinados recursos do site e,
+        quando aplicável, compreender como a página é utilizada.
+      </p>
+
+      <h3>
+        2. Cookies necessários
+      </h3>
+
+      <p>
+        Podem ser utilizados cookies estritamente necessários para recursos
+        técnicos, segurança, preferências e funcionamento da página.
+      </p>
+
+      <h3>
+        3. Cookies analíticos
+      </h3>
+
+      <p>
+        Caso ferramentas de análise de audiência sejam instaladas, elas
+        poderão utilizar cookies para gerar estatísticas sobre utilização
+        do site. Essas ferramentas somente devem ser ativadas conforme
+        a configuração de consentimento adotada pelo responsável pelo site.
+      </p>
+
+      <h3>
+        4. Gerenciamento
+      </h3>
+
+      <p>
+        O usuário pode configurar o navegador para bloquear ou excluir
+        cookies. O bloqueio de determinados cookies poderá afetar algumas
+        funcionalidades.
+      </p>
+
+      <h3>
+        5. Cookies de terceiros
+      </h3>
+
+      <p>
+        Caso sejam utilizados serviços de terceiros, como ferramentas de
+        análise, mapas, vídeos, atendimento ou publicidade, suas respectivas
+        políticas poderão ser aplicáveis.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- MODAL TERMOS -->
+  <div class="modal" id="terms">
+
+    <div class="modal-content">
+
+      <button
+        class="close"
+        onclick="closeModal('terms')"
+        aria-label="Fechar"
+      >
+        ×
+      </button>
+
+      <h2>
+        Termos de Uso
+      </h2>
+
+      <p>
+        Última atualização: 10 de agosto de 2026.
+      </p>
+
+      <h3>
+        1. Finalidade do site
+      </h3>
+
+      <p>
+        O site tem finalidade institucional e informativa e disponibiliza
+        um canal para solicitação de contato e análise inicial de questões
+        jurídicas.
+      </p>
+
+      <h3>
+        2. Ausência de promessa de resultado
+      </h3>
+
+      <p>
+        As informações apresentadas não representam garantia de resultado
+        em processos, negociações, requerimentos ou qualquer outra medida
+        jurídica.
+      </p>
+
+      <h3>
+        3. Serviços financeiros
+      </h3>
+
+      <p>
+        A Sociedade Individual de Advocacia Sonia Valerio não se apresenta
+        neste site como banco, instituição financeira, correspondente
+        bancário ou concedente de crédito. A referência a questões
+        financeiras, empréstimos, financiamentos ou serviços bancários
+        refere-se à análise e orientação jurídica sobre situações
+        apresentadas pelo cliente.
+      </p>
+
+      <h3>
+        4. Relação profissional
+      </h3>
+
+      <p>
+        O preenchimento do formulário não implica contratação automática
+        de serviços jurídicos. A contratação dependerá de avaliação da
+        demanda, disponibilidade profissional e formalização das condições
+        aplicáveis.
+      </p>
+
+      <h3>
+        5. Informações oficiais
+      </h3>
+
+      <p>
+        Informações tributárias, valores de impostos, prazos e procedimentos
+        devem ser confirmados nos sistemas oficiais competentes, pois podem
+        sofrer alterações.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner" id="cookieBanner">
+
+    <div class="cookie-content">
+
+      <p>
+        Utilizamos cookies necessários para o funcionamento deste site.
+        Dependendo das ferramentas instaladas, poderão ser utilizados
+        cookies adicionais para análise e funcionalidades. Consulte nossa
+        Política de Cookies para saber mais.
+      </p>
+
+      <div class="cookie-buttons">
+
+        <button
+          class="reject-cookie"
+          onclick="setCookiePreference('rejected')"
+        >
+          Recusar opcionais
+        </button>
+
+        <button
+          class="accept-cookie"
+          onclick="setCookiePreference('accepted')"
+        >
+          Aceitar
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script>
+
+    /* ANO AUTOMÁTICO */
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+
+    /* MODAIS */
+
+    function openModal(id) {
+      document.getElementById(id).classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.remove("active");
+      document.body.style.overflow = "";
+    }
+
+    document.querySelectorAll(".modal").forEach(function(modal) {
+
+      modal.addEventListener("click", function(event) {
+
+        if (event.target === modal) {
+          modal.classList.remove("active");
+          document.body.style.overflow = "";
+        }
+
+      });
+
+    });
+
+
+    /* COOKIES */
+
+    function setCookiePreference(value) {
+
+      localStorage.setItem(
+        "cookie_preference",
+        value
+      );
+
+      document.getElementById(
+        "cookieBanner"
+      ).style.display = "none";
+
+    }
+
+
+    window.addEventListener("load", function() {
+
+      const preference =
+        localStorage.getItem("cookie_preference");
+
+      if (!preference) {
+
+        document.getElementById(
+          "cookieBanner"
+        ).style.display = "block";
+
+      }
+
+    });
+
+
+    /* FORMULÁRIO */
+
+    document
+      .getElementById("leadForm")
+      .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const consent =
+          document.getElementById("consentimento");
+
+        if (!consent.checked) {
+
+          alert(
+            "É necessário aceitar a Política de Privacidade."
+          );
+
+          return;
+
+        }
+
+        /*
+          IMPORTANTE:
+
+          Este exemplo não envia dados para um servidor.
+
+          Para produção, substitua esta etapa por uma integração
+          segura com seu backend, CRM, e-mail ou API de atendimento.
+
+          Nunca coloque senhas, tokens secretos ou chaves privadas
+          diretamente neste arquivo HTML.
+        */
+
+        const formMessage =
+          document.getElementById("formMessage");
+
+        formMessage.style.display = "block";
+
+        this.reset();
+
+        formMessage.scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+
+      });
+
+
+    /* MÁSCARA CNPJ */
+
+    document
+      .getElementById("cnpj")
+      .addEventListener("input", function(event) {
+
+        let value =
+          event.target.value
+            .replace(/\D/g, "")
+            .slice(0, 14);
+
+        value = value
+          .replace(/^(\d{2})(\d)/, "$1.$2")
+          .replace(/^(\d{2})\.(\d{3})(\d)/, "$1.$2.$3")
+          .replace(/\.(\d{3})(\d)/, ".$1/$2")
+          .replace(/(\d{4})(\d)/, "$1-$2");
+
+        event.target.value = value;
+
+      });
+
+
+    /* MÁSCARA TELEFONE */
+
+    document
+      .getElementById("telefone")
+      .addEventListener("input", function(event) {
+
+        let value =
+          event.target.value
+            .replace(/\D/g, "")
+            .slice(0, 11);
+
+        if (value.length <= 10) {
+
+          value = value
+            .replace(/^(\d{2})(\d)/, "($1) $2")
+            .replace(/(\d{4})(\d)/, "$1-$2");
+
+        } else {
+
+          value = value
+            .replace(/^(\d{2})(\d)/, "($1) $2")
+            .replace(/(\d{5})(\d)/, "$1-$2");
+
+        }
+
+        event.target.value = value;
+
+      });
+
+  </script>
+
+</body>
+</html>
